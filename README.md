@@ -2,19 +2,19 @@
 
 This is the PHP SDK to consume API services from ProAPIs.cloud. You can require this package using composer or you can download the ZIP file from here to include in your project.
 
-### Installation
+## Installation
 
 ```bash
 composer require proapis/proapis-client
 ```
 
-### Getting Started
+## Getting Started
 Get your API key at [https://proapis.cloud](https://proapis.cloud) first. And then include the autoload file in your project:
 ```php
 require "vendor/autoload.php";
 ```
 
-### Google SERPs ([Docs](https://proapis.cloud/apis/google-serps-api/))
+## Google SERPs ([Docs](https://proapis.cloud/apis/google-serps-api/))
 
 ```php
 use Proapis\Services\GoogleSerps;
@@ -36,7 +36,7 @@ $params = [
 $data = $gs->getData($params);
 ```
 
-### Google Play ([Docs](https://proapis.cloud/apis/google-play-api/))
+## Google Play ([Docs](https://proapis.cloud/apis/google-play-api/))
 
 ```php
 use Proapis\Services\GooglePlay;
@@ -54,7 +54,7 @@ $params = [
 $data = $gp->getData($params);
 ```
 
-### Keywords Data ([Docs](https://proapis.cloud/apis/google-keyword-planner-api/))
+## Keywords Data ([Docs](https://proapis.cloud/apis/google-keyword-planner-api/))
 
 ```php
 use Proapis\Services\Keywords;
@@ -72,7 +72,7 @@ $params = [
 $data = $kp->getData($params);
 ```
 
-### Moz Data ([Docs](https://proapis.cloud/apis/moz-api/))
+## Moz Data ([Docs](https://proapis.cloud/apis/moz-api/))
 
 ```php
 use Proapis\Services\Moz;
@@ -90,7 +90,7 @@ $data = [
 $data = $moz->getData($data);
 ```
 
-### Catching Exceptions
+## Catching Exceptions
 The API client throws several exceptions based on the errors that encountered. Here is now to catch the exceptions and act appropriately:
 
 ```php
@@ -139,6 +139,6 @@ try
 }
 ```
 
-### Issues & Bugs
+## Issues & Bugs
 
 For common bug reports, please use the issues. For security-related issues, contact us at [https://proapis.cloud/contact-us](https://proapis.cloud/contact-us).
