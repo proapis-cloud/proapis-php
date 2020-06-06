@@ -1,7 +1,7 @@
 {
     "name": "proapis/proapis-client",
     "type": "library",
-    "description": "The PHP SDK to access API services at https://proapos.cloud.",
+    "description": "The PHP SDK to access API services at https://proapis.cloud.",
     "keywords": [
         "apis",
         "seo",
