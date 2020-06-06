@@ -91,7 +91,7 @@ $data = $moz->getData($data);
 ```
 
 ## Catching Exceptions
-The API client throws several exceptions based on the errors that encountered. Here is now to catch the exceptions and act appropriately:
+The API client throws several exceptions based on the errors that encountered. Here is how to catch the exceptions and act appropriately:
 
 ```php
 use Proapis\Services\GoogleSerps;
