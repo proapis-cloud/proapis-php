@@ -1,0 +1,28 @@
+{
+    "name": "proapis/proapis-client",
+    "type": "library",
+    "description": "The PHP SDK to access API services at https://proapos.cloud.",
+    "keywords": [
+        "apis",
+        "seo",
+        "proapis"
+    ],
+    "homepage": "https://proapis.cloud",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ProAPIs",
+            "email": "sales@proapis.cloud",
+            "homepage": "https://proapis.cloud",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Proapis\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
