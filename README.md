@@ -29,3 +29,21 @@ $params = [
 ];
 $data = $gs->getData($params);
 ```
+
+### Google Play ([Docs](https://proapis.cloud/apis/google-play-api/))
+
+```php
+use Proapis\Services\GooglePlay;
+
+// Set your API key
+$apiKey = "######################";
+
+// Create instance
+$gs = new GooglePlay($ApiKey);
+
+// Get data
+$params = [
+    "package" => "com.whatsapp"
+];
+$data = $gs->getData($params);
+```
