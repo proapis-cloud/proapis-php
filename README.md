@@ -92,4 +92,4 @@ $data = $moz->getData($data);
 
 ### Issues & Bugs
 
-For common bug reports, please use the issues. For security-related issues, contact us at [https://proapis.cloud/contact](https://proapis.cloud/contact).
+For common bug reports, please use the issues. For security-related issues, contact us at [https://proapis.cloud/contact-us](https://proapis.cloud/contact-us).
