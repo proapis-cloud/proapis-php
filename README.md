@@ -39,13 +39,13 @@ use Proapis\Services\GooglePlay;
 $apiKey = "######################";
 
 // Create instance
-$gs = new GooglePlay($ApiKey);
+$gp = new GooglePlay($ApiKey);
 
 // Get data
 $params = [
     "package" => "com.whatsapp"
 ];
-$data = $gs->getData($params);
+$data = $gp->getData($params);
 ```
 
 ### Keywords Data ([Docs](https://proapis.cloud/apis/google-keyword-planner-api/))
@@ -57,13 +57,13 @@ use Proapis\Services\Keywords;
 $apiKey = "######################";
 
 // Create instance
-$gs = new Keywords($ApiKey);
+$kp = new Keywords($ApiKey);
 
 // Get data
 $params = [
     "keyword" => "hiking shoes"
 ];
-$data = $gs->getData($params);
+$data = $kp->getData($params);
 ```
 
 ### Moz Data ([Docs](https://proapis.cloud/apis/moz-api/))
@@ -75,11 +75,11 @@ use Proapis\Services\Moz;
 $apiKey = "######################";
 
 // Create instance
-$gs = new Moz($ApiKey);
+$moz = new Moz($ApiKey);
 
 // Get data
 $data = [
     "domains" => ["google.com", "facebook.com", "wikipedia.org"]
 ];
-$data = $gs->getData($data);
+$data = $moz->getData($data);
 ```
