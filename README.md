@@ -1,4 +1,4 @@
-# PHP SDK for (https://proapis.cloud)[https://proapis.cloud]
+# PHP SDK for [https://proapis.cloud](https://proapis.cloud)
 
 This is the PHP SDK to consume API services from ProAPIs.cloud. You can require this package using composer or you can download the ZIP file from here to include in your project.
 
@@ -10,7 +10,7 @@ composer require proapis/proapis-client
 
 ### Google SERPs API
 
-```
+```php
 use Proapis\Services\GoogleSerps;
 
 // Set your API key
