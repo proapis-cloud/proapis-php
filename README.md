@@ -47,3 +47,21 @@ $params = [
 ];
 $data = $gs->getData($params);
 ```
+
+### Keywords Data ([Docs](https://proapis.cloud/apis/google-keyword-planner-api/))
+
+```php
+use Proapis\Services\Keywords;
+
+// Set your API key
+$apiKey = "######################";
+
+// Create instance
+$gs = new Keywords($ApiKey);
+
+// Get data
+$params = [
+    "keyword" => "hiking shoes"
+];
+$data = $gs->getData($params);
+```
