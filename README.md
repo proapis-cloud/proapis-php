@@ -65,3 +65,21 @@ $params = [
 ];
 $data = $gs->getData($params);
 ```
+
+### Moz Data ([Docs](https://proapis.cloud/apis/moz-api/))
+
+```php
+use Proapis\Services\Moz;
+
+// Set your API key
+$apiKey = "######################";
+
+// Create instance
+$gs = new Moz($ApiKey);
+
+// Get data
+$data = [
+    "domains" => ["google.com", "facebook.com", "wikipedia.org"]
+];
+$data = $gs->getData($data);
+```
