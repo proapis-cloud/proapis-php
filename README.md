@@ -90,6 +90,55 @@ $data = [
 $data = $moz->getData($data);
 ```
 
+### Catching Exceptions
+The API client throws several exceptions based on the errors that encountered. Here is now to catch the exceptions and act appropriately:
+
+```php
+use Proapis\Services\GoogleSerps;
+use Proapis\Exceptions\ApikeyException;
+use Proapis\Exceptions\CreditsException;
+use Proapis\Exceptions\InvalidkeyException;
+use Proapis\Exceptions\ServerException;
+use Proapis\Exceptions\ValidationException;
+
+// Set your API key
+$apiKey = "######################";
+
+// Create instance
+$gs = new GoogleSerps($ApiKey);
+
+// Get data
+$params = [
+    "q" => "Your search query",
+    "pages" => 10,
+    "hl" => "en_US",
+    "gl" => "us",
+    "ua" => "desktop"
+];
+
+try
+{
+    $data = $gs->getData($params);
+    print_r($data);
+} catch(ApikeyException $e) 
+{
+    // API key not provided
+} catch(CreditsException $e)
+{
+    // Credits exhausted. Buy more at https://proapis.cloud
+} catch(InvalidkeyException $e)
+{
+    // API key is invalid
+} catch(ServerException $e)
+{
+    // Our servers are down. Maybe for maintenance
+} catch(ValidationException $e)
+{
+    // Validation errors occured
+    print_r($e->getMessage());
+}
+```
+
 ### Issues & Bugs
 
 For common bug reports, please use the issues. For security-related issues, contact us at [https://proapis.cloud/contact-us](https://proapis.cloud/contact-us).
