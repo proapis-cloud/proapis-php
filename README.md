@@ -8,6 +8,12 @@ This is the PHP SDK to consume API services from ProAPIs.cloud. You can require 
 composer require proapis/proapis-client
 ```
 
+### Getting Started
+Get your API key at [https://proapis.cloud](https://proapis.cloud) first. And then include the autoload file in your project:
+```php
+require "vendor/autoload.php";
+```
+
 ### Google SERPs ([Docs](https://proapis.cloud/apis/google-serps-api/))
 
 ```php
@@ -83,3 +89,5 @@ $data = [
 ];
 $data = $moz->getData($data);
 ```
+
+For common bug reports, please use the issues. For security-related issues, contact us at [https://proapis.cloud/contact](https://proapis.cloud/contact).
